@@ -1,0 +1,35 @@
+// Sample Java Program
+import java.util.Scanner; // Import Scanner for input
+
+public class SampleProgram {
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Display a welcome message
+        System.out.println("Welcome to the Sample Java Program!");
+
+        // Ask for user input
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        // Display the user's information
+        System.out.println("\nHello, " + name + "!");
+
+        // Conditional statement example
+        if (age < 18) {
+            System.out.println("You are a minor.");
+        } else {
+            System.out.println("You are an adult.");
+        }
+
+        // Closing message
+        System.out.println("\nThank you for trying this program!");
+
+        // Close the scanner
+        scanner.close();
+    }
+}
